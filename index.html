@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saio Paltform</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- FontAwesome Library -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Loader -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+    <!-- End Loader -->
+
+    <div id="content" style="display: none">
+      <!-- Start Nav section -->
+      <div class="header">
+        <div class="container">
+          <div class="nav">
+            <div class="logo">Saios</div>
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-button" onclick="showSidebar()">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30"
+                  viewBox="0 96 960 960"
+                  width="30"
+                >
+                  <path
+                    d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30"
+                  viewBox="0 96 960 960"
+                  width="30"
+                >
+                  <path
+                    d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li onclick="hideSidebar()"><a href="#about">About</a></li>
+            <li onclick="hideSidebar()"><a href="#services">Services</a></li>
+            <li onclick="hideSidebar()"><a href="#team">Team</a></li>
+            <li onclick="hideSidebar()"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Nav section -->
+
+      <!-- Start landing section -->
+      <div class="landing" id="home">
+        <div class="content">
+          <h1 class="company-name">Saios</h1>
+          <p class="description">where creativity and excellence meet</p>
+        </div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+      </div>
+      <!-- End landing section -->
+
+      <!-- Start about section -->
+      <div class="about" id="about">
+        <div class="container">
+          <h2 class="section-heading">About Us</h2>
+          <div class="content">
+            <p>
+              A technology company dedicated to providing a wide range of
+              digital services online. Our expertise spans website and mobile
+              application development, graphic design, and motion graphics. In
+              addition, we deliver exceptional visual and audio productions. We
+              also have a specialized department offering comprehensive social
+              media services, including account management, support, and
+              sponsored advertising. Our motto is precision and excellence in
+              every task we undertake.
+            </p>
+            <a href="pdf files/Saios Technology_20241120_183527_٠٠٠٠.pdf"
+              >Find out more</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- End about section -->
+
+      <!-- Start services section -->
+      <div class="services" id="services">
+        <div class="container">
+          <h2 class="section-heading">Services</h2>
+          <div class="boxes">
+            <div class="box">
+              <span>
+                <i class="fa-solid fa-palette"></i>
+                <p>Graphic design</p>
+              </span>
+            </div>
+            <div class="box">
+              <span>
+                <i class="fa-solid fa-palette"></i>
+                <p>Motion graphics</p>
+              </span>
+            </div>
+            <div class="box">
+              <span>
+                <i class="fa-solid fa-palette"></i>
+                <p>Web design</p>
+              </span>
+            </div>
+            <div class="box">
+              <span>
+                <i class="fa-solid fa-palette"></i>
+                <p>Marketing</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End services section -->
+
+      <!-- Start Team section -->
+      <div class="team" id="team">
+        <div class="container">
+          <h1 class="section-heading">Team Members</h1>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="https://picsum.photos/400/400"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Mousa Ibrahim Hejazi</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="images/mousa-mohammed-hejazi.png"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Mousa Mohammed Hejazi</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="https://picsum.photos/400/400"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Qusay Khudair</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="https://picsum.photos/400/400"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Mohammed Abu Taleb</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="images/mohammed-hatem-ferwana.png"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Mohammed Hatem Ferwana</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="images/abdulrahman-adli-baraka.png"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Abdulrahman Adli Baraka</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="images/fouad-adel-al-shami.png"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Fouad Adel Al-Shami</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img src="images/baraa-alsahwaf.png" alt="team member" />
+                  </div>
+                  <p class="name">Baraa Alsahwaf</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="images/yousef-khaled-al-bayouk.png"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Yousef Khaled Al-Bayouk</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="images/mohammed-abu-taleb.png"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Mohammed Abu Taleb</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="https://picsum.photos/400/400"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Mohammed Abu Taleb</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="img-container">
+                    <img
+                      src="images/salah-hazem-hasab-allah.png"
+                      alt="team member"
+                    />
+                  </div>
+                  <p class="name">Salah Hazem Hasab-Allah</p>
+                  <p class="job">Frontend developer</p>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End Team section -->
+
+      <!-- Start Contact section -->
+      <div class="contact" id="contact">
+        <div class="container">
+          <h1 class="section-heading">Contact us</h1>
+          <div class="socials">
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact section -->
+
+      <!-- Start signature section -->
+      <div class="signature">
+        <div class="container">
+          <div class="mohammed">
+            <p>
+              Designed and coded by
+              <a href="pdf files/mohammed-abu-taleb.pdf"
+                >Mohammed Ashraf Abu Taleb</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End signature section-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
